@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.myapp.newsmvvmappdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.myapp.newsmvvmappdemo.application.GlobalApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewsMvvmAppDemo"
+        android:usesCleartextTraffic="true"
+        tools:ignore="DataExtractionRules,Instantiatable">
+        <activity
+            android:name="com.myapp.newsmvvmappdemo.view.activity.NewsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.NewsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

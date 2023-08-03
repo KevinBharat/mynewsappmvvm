@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">News Mvvm App Demo</string>>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection</string>
+    <string name="home">Home</string>
+    <string name="header_image">Header Image</string>
+    <string name="news_details">News Details</string>
+    <string name="news_item_image">news item image</string>
+    <string name="back_arrow_image">back arrow</string>
+    <string name="progress_image">progress dialog image</string>
+</resources>
